@@ -23,13 +23,29 @@ RESPOSTA:
   <head>
      <meta charset="UTF-8">
      <style>
-        .links
-
-
-
+        .links{
+          background: blue;
+          width: 225px;
+          -webkit-transition: 0.5s ease-out;
+          -moz-transition: 0.5s ease-out;
+          -o-transition: 0.5s ease-out;
+          transition: 0.5s ease-out;
+          font-size: 32px;
+          font-family: Arial;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .links:hover{
+          background: red;
+        }
+        .links a {
+            color: white;
+        }
      </style>
   </head>
   <body>
-    <a class= links href="http://google.com">Ir para o google</a>
+    <div class="links">
+      <a href="http://google.com"> Ir para o google</a>
+    </div>
   </body>
 </HTML>
